@@ -4,15 +4,16 @@
   "version": "1.0",
   "description": "Translate from Yandex and save on Evernote on the go!",
   "icons": {
-    "128": "gorilla128.png",
-    "48": "gorilla48.png",
-    "16": "gorilla16.png"
+    "128": "icons/gorilla128.png",
+    "48": "icons/gorilla48.png",
+    "16": "icons/gorilla16.png"
   },
   "background":{
     "scripts": ["eventPage.js"],
     "persistent": false
   },
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "notifications"
   ]
 }

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd9ee1a1-1997-427c-b706-868cfbdbd5ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/gorilla128.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eventPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/eventPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translate.html" beforeDir="false" afterPath="$PROJECT_DIR$/translate.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,10 @@
       <workItem from="1570549251114" duration="2542000" />
       <workItem from="1570552244073" duration="666000" />
       <workItem from="1570555514126" duration="163000" />
-      <workItem from="1570561003370" duration="539000" />
+      <workItem from="1570561003370" duration="1587000" />
+      <workItem from="1570622130415" duration="56000" />
+      <workItem from="1570622264675" duration="654000" />
+      <workItem from="1570623507666" duration="8580000" />
     </task>
     <servers />
   </component>

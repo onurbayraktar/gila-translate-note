@@ -1,12 +1,12 @@
 
 // Creating object for contextMenu.
-var menuItem = {
+var mainMenuItem = {
     "id": "gila",
     "title": "Gila",
     "contexts": ["selection"]
-
 };
-chrome.contextMenus.create(menuItem);
+chrome.contextMenus.create(mainMenuItem);
+
 
 // Defining the url
 let url = new URL("https://translate.yandex.net/api/v1.5/tr.json/translate");
@@ -29,16 +29,30 @@ chrome.contextMenus.onClicked.addListener(function (clickData) {
             // Begin accessing JSON data here
             var res = this.responseText;
             var json = JSON.parse(res);
-            var notifOptions = {                // Notification object
-                type: 'basic',
-                iconUrl: 'icons/gorilla48.png',
-                title: 'Gila - Translation',
-                message: json.text.toString()
-            };
-            chrome.notifications.create('translateNotify', notifOptions);
+            chrome.notifications.create("", {
+                type:    "basic",
+                iconUrl: "icons/gorilla48.png",
+                title:   "Gila - Translation",
+                message: json.text.toString(),
+                buttons: [{
+                    title: "Yes, get me there"
+                }, {
+                    title: "Get out of my way",}]
+            }, function(id) {
+                myNotificationID = id;
+            });
+
+            chrome.notifications.onButtonClicked.addListener(function(notifId, btnIdx) {
+                if (notifId === myNotificationID) {
+                    if (btnIdx === 0) {
+
+                    } else if (btnIdx === 1) {
+
+                    }
+                }
+            });
 
         };
-
         // Send request
         request.send()
     }
